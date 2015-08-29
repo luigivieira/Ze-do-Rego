@@ -23,11 +23,11 @@ O objetivo do jogo é solucionar os *puzzles* de cada fase de forma a progredir 
 
 ### Zé do Rego
 
-![Imagem do Zé do Rego](/imagens/Ze-do-Rego.png)
+![Imagem do Zé do Rego](imagens/Ze-do-Rego.png)
 
 ### Lili
 
-![Imagem do Zé do Rego](/imagens/Lili.png)
+![Imagem do Zé do Rego](imagens/Lili.png)
 
 ## Mecânica
 
