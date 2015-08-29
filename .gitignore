@@ -1,0 +1,8 @@
+# Ignore backup files
+*.bak
+
+# Ignore output directories
+
+
+# Vim session file
+*session.vim
