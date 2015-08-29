@@ -1,13 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Fungus;
+using UnityEngine.Assertions;
 
-public abstract class Interactable : MonoBehaviour{
-	public Flowchart interactableFlowChart;
-	protected ContextMenu contextMenu;
+public class Interactable : MonoBehaviour{
+	public GameObject observeObj, useObj, pickObj, talkObj;
+
+	private ContextMenu contextMenu;
 
 	protected virtual void Awake () {
-		contextMenu = GameObject.FindObjectOfType<ContextMenu>();	
+		Assert.IsNotNull(observeObj);
+		Assert.IsNotNull(useObj);
+		Assert.IsNotNull(pickObj);
+		Assert.IsNotNull(talkObj);
+
+		contextMenu = LevelManager.Instance().GetContextMenu();
+		observeObj.SetActive(false);
+		useObj.SetActive(false);
+		pickObj.SetActive(false);
+		talkObj.SetActive(false);
 	}
 
 	// Use this for initialization
@@ -16,23 +26,20 @@ public abstract class Interactable : MonoBehaviour{
 	}
 
 	public virtual void Observe() {
-		Say("ObserveNoAction");
+		observeObj.SetActive(true);
 	}
 	public virtual void Use() {
-		Say("UseNoAction");
+		useObj.SetActive(true);
 	}
 	public virtual void Pick() {
-		Say("PickNoAction");
+		pickObj.SetActive(true);
 	}
 	public virtual void TalkTo() {
-		Say("TalkToNoAction");
+		talkObj.SetActive(true);
 	}
-
-	protected virtual void Say(string sayKey){
-		Block sayBlock = interactableFlowChart.FindBlock("SayBlock");
-		Say command = sayBlock.commandList[0] as Say;
-		command.storyText = Texts.GetText(sayKey);
-		sayBlock.Execute();
+	void OnMouseDown() {
+		LevelManager.Instance().SetSelectedInteractable(this);
+		contextMenu.gameObject.SetActive(true);
 	}
 
 }

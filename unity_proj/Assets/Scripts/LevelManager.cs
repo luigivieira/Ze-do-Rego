@@ -1,27 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LevelManager : MonoBehaviour {
+public class LevelManager : Singleton<LevelManager> {
 
-	public Fungus.Flowchart interactablesFlowChart;
-	public ContextMenu ctxMenu;
+	public Interactable currentInteractable;
 
-	private bool ctxMenuDismissEnabled;
-
-	public static Fungus.Flowchart getInteractableFlow(){
-		return GameObject.Find("LevelManager").GetComponent<LevelManager>().interactablesFlowChart;
+	private ContextMenu ctxMenu;
+	public ContextMenu GetContextMenu(){
+		if (ctxMenu == null) {
+			ctxMenu = GameObject.FindObjectOfType<ContextMenu>();
+		}
+		return ctxMenu;
 	}
 
-	void Awake () {
-		interactablesFlowChart = GameObject.Find("InteractableFlowChart").GetComponent<Fungus.Flowchart>();
+	public Interactable GetSelectedInteractable ()
+	{
+		return currentInteractable;
 	}
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
+	public void SetSelectedInteractable (Interactable interactable)
+	{
+		currentInteractable = interactable;
 	}
 }

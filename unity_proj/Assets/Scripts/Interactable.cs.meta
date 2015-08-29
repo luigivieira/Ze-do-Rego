@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: 86b69397d931f48998b84dde7d7010bb
-timeCreated: 1440849777
+timeCreated: 1440873864
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - observeObj: {fileID: 148262, guid: faad7288597294bb6b4929829029494e, type: 2}
+  - useObj: {fileID: 148262, guid: faad7288597294bb6b4929829029494e, type: 2}
+  - pickObj: {fileID: 148262, guid: faad7288597294bb6b4929829029494e, type: 2}
+  - talkObj: {fileID: 148262, guid: faad7288597294bb6b4929829029494e, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-	public Fungus.Flowchart interactablesFlowChart;
+	//public Fungus.Flowchart interactablesFlowChart;
 
 	// Use this for initialization
 	void Start () {
@@ -16,16 +16,16 @@ public class Player : MonoBehaviour {
 	}
 
 	public void PickUpCollectable(){
-		string toPickName = interactablesFlowChart.GetStringVariable("selectedInteractable");
-		GameObject toPick = GameObject.Find(toPickName);
+		//string toPickName = interactablesFlowChart.GetStringVariable("selectedInteractable");
+		//GameObject toPick = GameObject.Find(toPickName);
 		//TODO: Send to inventory
-		Destroy(toPick);	
+		//Destroy(toPick);	
 	}
 
 	public void MoveToCollectable(){
-		string toPickName = interactablesFlowChart.GetStringVariable("selectedInteractable");
-		GameObject toPick = GameObject.Find(toPickName);
+		//string toPickName = interactablesFlowChart.GetStringVariable("selectedInteractable");
+		//GameObject toPick = GameObject.Find(toPickName);
 		//TODO: use callback to set item in inventory
-		Fungus.iTween.MoveTo(this.gameObject, toPick.transform.position, 1);
+		//Fungus.iTween.MoveTo(this.gameObject, toPick.transform.position, 1);
 	}
 }
