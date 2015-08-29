@@ -3,20 +3,16 @@ using System.Collections;
 using Fungus;
 
 public abstract class Interactable : MonoBehaviour{
-	protected Flowchart interactableFlowChart;
+	public Flowchart interactableFlowChart;
+	protected ContextMenu contextMenu;
 
-	void Awake () {
-		interactableFlowChart = GameObject.Find("InteractableFlowChart").GetComponent<Flowchart>();
+	protected virtual void Awake () {
+		contextMenu = GameObject.FindObjectOfType<ContextMenu>();	
 	}
 
 	// Use this for initialization
-	void Start () {
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	protected virtual void Start () {
+		contextMenu.gameObject.SetActive(false);
 	}
 
 	public virtual void Observe() {

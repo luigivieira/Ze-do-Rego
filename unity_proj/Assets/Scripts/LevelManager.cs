@@ -23,24 +23,5 @@ public class LevelManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(IsShowingCtxMenu() && Input.GetMouseButtonDown(0)){
-			ctxMenu.gameObject.SetActive(false);
-			ctxMenuDismissEnabled = false;
-			SetShowingCtxMenu(false);
-		}
 	}
-
-	private bool IsShowingCtxMenu(){
-		return interactablesFlowChart.GetBooleanVariable("showingCtxMenu") && ctxMenuDismissEnabled;
-	}
-
-	private void SetShowingCtxMenu(bool enabled){
-		interactablesFlowChart.SetBooleanVariable("showingCtxMenu", enabled);
-	}
-
-	public void enableCtxMenuDismiss() {
-		ctxMenuDismissEnabled = true;
-	}
-
-
 }
