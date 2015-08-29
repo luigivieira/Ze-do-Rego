@@ -16,21 +16,21 @@ O objetivo do jogo é solucionar os *puzzles* de cada fase de forma a progredir 
 
 ### Características
 
-	* Plataformas: Web e mobile, particularmente Android e iOS.
-	* Arte: Cartunesca, seguindo o estilo dos desenhos que inspiram o jogo.
+* Plataformas: Web e mobile, particularmente Android e iOS.
+* Arte: Cartunesca, seguindo o estilo dos desenhos que inspiram o jogo.
 
 ## Mecânica
 
 ### Opções de Ação
 
-	* **Abrir**. Permite abrir objetos ou personagens que oferecem essa possibilidade de interação.
-	* **Fechar**. Permite fechar objetos ou personagens que oferecem essa possibilidade de interação.
-	* **Pegar**. Permite pegar objetos ou personagens que oferecem essa possibilidade de interação.
-	* **Observar**. Permite observar as características de objetos ou personagens e tecer comentários que auxiliam o jogador.
-	* **Falar com**. Permite iniciar diálogos com objetos ou personagens.
-	* **Usar**. Permite utilizar objetos ou personagens uns com os outros.
-	* **Empurrar**. Permite empurrar objetos ou personagens que oferecem essa possibilidade de interação.
-	* **Puxar**. Permite puxar objetos ou personagens que oferecem essa possibilidade de interação.
+* **Abrir**. Permite abrir objetos ou personagens que oferecem essa possibilidade de interação.
+* **Fechar**. Permite fechar objetos ou personagens que oferecem essa possibilidade de interação.
+* **Pegar**. Permite pegar objetos ou personagens que oferecem essa possibilidade de interação.
+* **Observar**. Permite observar as características de objetos ou personagens e tecer comentários que auxiliam o jogador.
+* **Falar com**. Permite iniciar diálogos com objetos ou personagens.
+* **Usar**. Permite utilizar objetos ou personagens uns com os outros.
+* **Empurrar**. Permite empurrar objetos ou personagens que oferecem essa possibilidade de interação.
+* **Puxar**. Permite puxar objetos ou personagens que oferecem essa possibilidade de interação.
 
 ## Métodos de Interação
 
