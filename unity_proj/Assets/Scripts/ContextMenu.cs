@@ -25,7 +25,8 @@ public class ContextMenu : MonoBehaviour {
 	}
 
 	public void OnMouseDown(){
-		interactablesFlowChart.SendFungusMessage("pickSelected");
+//		interactablesFlowChart.SendFungusMessage("pickSelected");
 //		Destroy(selectedObject);
+		selectedObject.GetComponent<Interactable>().Observe();
 	}
 }

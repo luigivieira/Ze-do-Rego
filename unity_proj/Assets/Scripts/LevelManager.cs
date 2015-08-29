@@ -8,6 +8,10 @@ public class LevelManager : MonoBehaviour {
 
 	private bool ctxMenuDismissEnabled;
 
+	public static Fungus.Flowchart getInteractableFlow(){
+		return GameObject.Find("LevelManager").GetComponent<LevelManager>().interactablesFlowChart;
+	}
+
 	void Awake () {
 		interactablesFlowChart = GameObject.Find("InteractableFlowChart").GetComponent<Fungus.Flowchart>();
 	}
