@@ -14,9 +14,13 @@ public class Interactable : MonoBehaviour{
 		Assert.IsNotNull(talkObj);
 
 		contextMenu = LevelManager.Instance().GetContextMenu();
+		observeObj = Instantiate(observeObj);
 		observeObj.SetActive(false);
+		useObj = Instantiate(useObj);
 		useObj.SetActive(false);
+		pickObj = Instantiate(pickObj);
 		pickObj.SetActive(false);
+		talkObj = Instantiate(talkObj);
 		talkObj.SetActive(false);
 	}
 

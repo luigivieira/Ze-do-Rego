@@ -6,12 +6,13 @@ public class ContextMenu : MonoBehaviour {
 	//public Fungus.Flowchart interactablesFlowChart;
 	private Interactable selectedObject;
 	
-	void Start () {
+	void OnEnable () {
 		selectedObject = LevelManager.Instance().GetSelectedInteractable();
+		if (selectedObject == null) return;
 		Vector3 closerPosition = selectedObject.transform.position;
 		SpriteRenderer closerRenderer = selectedObject.GetComponent<SpriteRenderer>();
-		this.transform.Translate(new Vector3(closerPosition.x+closerRenderer.bounds.size.x,
-		                                     closerPosition.y+2,0));
+		this.transform.position = new Vector3(closerPosition.x+closerRenderer.bounds.size.x,
+		                                     closerPosition.y+2,0);
 	}
 	
 	// Update is called once per frame
