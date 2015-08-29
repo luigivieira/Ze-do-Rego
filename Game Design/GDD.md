@@ -19,6 +19,16 @@ O objetivo do jogo é solucionar os *puzzles* de cada fase de forma a progredir 
 * Plataformas: Web e mobile, particularmente Android e iOS.
 * Arte: Cartunesca, seguindo o estilo dos desenhos que inspiram o jogo.
 
+## Personagens
+
+### Zé do Rego
+
+![Imagem do Zé do Rego](/imagens/Ze-do-Rego.png)
+
+### Lili
+
+![Imagem do Zé do Rego](/imagens/Lili.png)
+
 ## Mecânica
 
 ### Opções de Ação
@@ -36,7 +46,34 @@ O objetivo do jogo é solucionar os *puzzles* de cada fase de forma a progredir 
 
 ### Interação na plataforma Web
 
-O jogador utiliza o cursor do mouse para mover o personagem da vaquinha Lili pelas áreas disponíveis no cenário, para interagir com os objetos e outros personagens
-do cenário e para acionar as opções de ação do menu.
+A interação com o jogo ocorre por meio do ponteiro do mouse.
+
+1. Seleção de opções de menu. O jogador clica sobre a opção do menu desejada, e a ação é imediatamente executada.
+
+2. Movimentação da vaquinha Lili. O jogador clica em qualquer área do cenário e a vaquinha se aproxima da área clicada, se existir um caminho no cenário
+que leve até o local clicado.
+
+3. Seleção de opções de ação. O jogador clica sobre uma opção de ação desejada, e ela é realçada na tela. Então, o jogador clica sobre um objeto
+ou personagem do cenário. O realce da opção de ação é imediatamente eliminado e a opção de ação é imediatamente executada sobre o objeto ou personagem
+escolhido.
+
+### Interação na plataforma Mobile
+
+A interação com o jogo ocorre por meio do toque na tela (com um dedo).
+
+1. Seleção de opções de menu. O jogador toca sobre a opção do menu desejada, e a ação é imediatamente executada.
+
+2. Movimentação da vaquinha Lili. O jogador toca em qualquer área do cenário e a vaquinha se aproxima da área clicada, se existir um caminho no cenário
+que leve até o local tocado.
+
+3. Seleção de opções de ação. O jogador toca sobre uma opção de ação desejada, e ela é realçada na tela. Então, o jogador toca sobre um objeto
+ou personagem do cenário. O realce da opção de ação é imediatamente eliminado e a opção de ação é imediatamente executada sobre o objeto ou personagem
+escolhido.
+
+## Telas
+
+### Menu Inicial
+
+
 
 ## Fases
