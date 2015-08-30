@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: d7ec7b2500333492c887c52a2ef52cd9
+timeCreated: 1440912128
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: lili_walk_front_ss_0
+    21300002: lili_walk_front_ss_1
+    21300004: lili_walk_front_ss_2
+    21300006: lili_walk_front_ss_3
+    21300008: lili_walk_front_ss_4
+    21300010: lili_walk_front_ss_5
+    21300012: lili_walk_front_ss_6
+    21300014: lili_walk_front_ss_7
+    21300016: lili_walk_front_ss_8
+    21300018: lili_walk_front_ss_9
+    21300020: lili_walk_front_ss_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: lili_walk_front_ss_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 686
+        width: 184
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 688
+        width: 184
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 694
+        width: 184
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_3
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 695
+        width: 188
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_4
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 692
+        width: 188
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 688
+        width: 192
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_6
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 691
+        width: 188
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_7
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 692
+        width: 188
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_8
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 694
+        width: 184
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_9
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 688
+        width: 184
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lili_walk_front_ss_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 331
+        width: 184
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
