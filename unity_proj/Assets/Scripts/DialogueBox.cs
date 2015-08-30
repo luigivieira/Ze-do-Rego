@@ -64,10 +64,8 @@ public class DialogueBox : MonoBehaviour {
 	public void CleanChoices ()
 	{
 		this.choices.Clear();
-		for(int i=0; i< content.transform.childCount;i++) {
-			Transform child = content.transform.GetChild(i);
-			child.parent = null;
-			Destroy(child.gameObject);
-		}
+		var children = new List<GameObject>();
+		foreach (Transform child in content.transform) children.Add(child.gameObject);
+		children.ForEach(child => Destroy(child));
 	}
 }
