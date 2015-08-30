@@ -21,7 +21,7 @@ Os textos a seguir são apresentados aos jogadores em uma tela específica do jo
 
 Zé do Rego é um Arranca-Línguas, uma criatura meio homem/meio gorila que aterroriza os criadores de gado (na verdade ele aterroriza ainda mais as vacas, mas como elas não falam e não têm um sindicato forte, ninguém dá a mínima). Há quem diga que ele é só uma lenda, e que as vacas na verdade morderiam a própria língua devido à coceira ocasionada por um tipo específico de febre afitosa e... Bobagem! Ele é muito real, e você faz muito bem em não duvidar - a dúvida  vai fazer você se sentir seguro, principalmente se não for uma vaca; mas, vai saber, Zé do Rego pode decidir variar o cardápio, e ai já viu né?
 
-Por ser meio homem, Zé do Rego tem a capacidade de falar. Mas ele não lê jornal, não joga videogame e não pega fila de banco, então ele simplesmente não fala porque não tem muito o que contar (talvez por isso ele seja assim tão furioso, mas eu divago). Por ser meio gorila, ele é grande, forte, peludo e selvagem. Ele tem grossos pelos negros, principalmente no peito e nos largos braços. Ou seja, tirando o fato de ele ser um híbrido de símio e humano, ele é praticamente o seu Manoel da padaria.
+Por ser meio homem, Zé do Rego tem a capacidade de falar. Mas ele não lê jornal, não joga videogame e não pega fila de banco, então ele simplesmente não fala porque não tem muito o que contar (talvez por isso ele seja assim tão furioso, mas eu divago). Por ser meio gorila, ele é grande, forte, peludo e selvagem. Ele tem grossos pelos negros, principalmente no peito e nos largos braços (ah, e na bunda). Ou seja, tirando o fato de ele ser um híbrido de símio e humano, ele é praticamente o seu Manoel da padaria.
 
 A família *do Rego* é bastante tradicional nas matas às margens do Araguaia, tendo até uma curva de rio nomeada em sua homenagem (a famosa Curva do Rego; não conhece?). Mas Zé é o último de sua espécie e isso é muito triste: ele não tem uma namorada (ou namorado; não sejamos preconceituosos) com quem compartilhar uma bela língua (#tudumtss).
 
@@ -82,7 +82,7 @@ A interação com o jogo ocorre por meio do toque na tela (com um dedo).
 
 ### Menu Inicial
 
-
+A tela do menu inicial apresenta uma animação em que Zé do Rego constantemente foge de Lili ao redor de um globo terrestre. Eles alternam ao aparecer na tela. Primeiramente, Zé aparece do lado direito, iniciando a sua volta ao mundo, para na frente dele, olha para os lados preocupado, e continua seu trajeto para a esquerda. A cada aparição, ele usa um veículo diferente: um balão, um trem, um triciclo, etc. Assim que ele vai para o lado de trás do globo, Lili aparece na direita. Ela também para  na frente do globo e olha para os lados, mas com uma expressão animada e saltitante. Ela sempre está a pé, saltitando (passando a impressão de que ela jamais alcancará Zé - expectativa a ser frustrada no final do jogo).
 
 ## Cenas
 
