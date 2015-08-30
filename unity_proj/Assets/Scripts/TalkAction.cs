@@ -16,6 +16,7 @@ public class TalkAction : MonoBehaviour {
 		DialogueManager manager = DialogueManager.LoadDialogueFile(dialogFile);
 		currentDialogue = manager.GetDialogue(dialogName);
 		Dialogue.Choice[] choices = currentDialogue.GetChoices();
+		Debug.Log(choices.Length);
 		if(choices.Length > 0 ){
 			if(choices.Length == 1) {
 				currentChoice = choices[0];
@@ -64,6 +65,7 @@ public class TalkAction : MonoBehaviour {
 	public void NextChoice(Dialogue.Choice nextChoice) {
 		currentDialogue.PickChoice(nextChoice);
 		nextChoices = currentDialogue.GetChoices();
+		Debug.Log(nextChoices.Length);
 		if(nextChoices.Length > 0){	
 			currentChoice = null;
 			if(nextChoices.Length == 1) {

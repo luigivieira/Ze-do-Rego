@@ -89,3 +89,9 @@ A tela do menu inicial apresenta uma animação em que Zé do Rego constantement
 ### No Colégio
 
 Esta é a cena inicial, que se passa no colégio em que Lili estuda. Enquanto estava na aula de Cálculo II, Lili vê Zé do Rego passando pela janela fechada. 
+
+# TODOs (porque não deu tempo de fazer no SPJam)
+
+* Fazer uma piada das "tetinhas" do menu de contexto com relação ao Dr. Ray (Dr. Hollywood).
+* Refazer a arte dos itens do menu de contexto como marcas na pele (queimadas na couro com um ferro em brasas). Afinal, a Lili já é bem piriguete, por que não também sado-maso?
+* Aproveitar pra mudar a arte da Lili pra incluir um piercing numa tetinha.
