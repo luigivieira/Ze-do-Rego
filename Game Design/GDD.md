@@ -1,4 +1,4 @@
-# Zé do Rego foge da Abraça-Monstro
+﻿# Zé do Rego foge da Abraça-Monstro
 
 > Zé do Rego é um [Arranca-Línguas](http://www.consciencia.org/lenda-do-arranca-lingua-folclore-brasileiro), uma aterrorizante criatura da mitologia brasileira (originário da região de Aruana, porto fluvial do Araguaia, em Goiás), semelhante a um grande e peludo homem-gorila que se alimenta das línguas de vacas. Os que o encontraram e sobreviveram relatam sua ferocidade, e as vacas tremem à mera menção de seu nome. Apenas a vaquinha Lili não tem medo dele! Pelo contrário, ela apenas deseja cobri-lo de abraços por ele ser tão fofinho (na opinião dela, claro). Zé, que não deseja essa atenção, não tem o que fazer além de fugir pra muuiiiitooo longe dessa Abraça-Monstro...
 
@@ -19,7 +19,7 @@ Os textos a seguir são apresentados aos jogadores em uma tela específica do jo
 
 ### Zé do Rego
 
-Zé do Rego é um Arranca-Línguas, uma criatura meio homem/meio gorila que aterroriza os criadores de gado (na verdade ele aterroriza ainda mais as vacas, mas como elas não falam e não têm um sindicato forte, ninguém dá a mínima). Há quem diga que ele é só uma lenda, e que as vacas na verdade morderiam a própria língua devido à coceira ocasionada por um tipo específico de febre afitosa e... Bobagem! Ele é muito real, e você faz muito bem em não duvidar - a dúvida  vai fazer você se sentir seguro, principalmente se não for uma vaca; mas, vai saber, Zé do Rego pode decidir variar o cardápio, e ai já viu né?
+Zé do Rego é um Arranca-Línguas, uma criatura meio homem/meio gorila que aterroriza os criadores de gado (na verdade ele aterroriza ainda mais as vacas, mas como elas não falam e não têm um sindicato forte, ninguém dá a mínima). Há quem diga que ele é só uma lenda, e que as vacas na verdade morderiam a própria língua devido à coceira ocasionada por um tipo específico de febre aftosa e... Bobagem! Ele é muito real, e você faz muito bem em não duvidar - a dúvida  vai fazer você se sentir seguro, principalmente se não for uma vaca; mas, vai saber, Zé do Rego pode decidir variar o cardápio, e ai já viu né?
 
 Por ser meio homem, Zé do Rego tem a capacidade de falar. Mas ele não lê jornal, não joga videogame e não pega fila de banco, então ele simplesmente não fala porque não tem muito o que contar (talvez por isso ele seja assim tão furioso, mas eu divago). Por ser meio gorila, ele é grande, forte, peludo e selvagem. Ele tem grossos pelos negros, principalmente no peito e nos largos braços (ah, e na bunda). Ou seja, tirando o fato de ele ser um híbrido de símio e humano, ele é praticamente o seu Manoel da padaria.
 
