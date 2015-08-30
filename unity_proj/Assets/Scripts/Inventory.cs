@@ -15,8 +15,15 @@ public class Inventory : MonoBehaviour {
 	 */
 	// Use this for initialization
 
+	private ToggleGroup group;
+	void Awake() {
+		group = GetComponent<ToggleGroup>();
+	}
+
 	public void addItem (InventoryItem item){
-		item.transform.parent = this.transform;
+		item.transform.SetParent(this.transform);
+		item.transform.localScale = Vector3.one;
+		item.GetComponent<Toggle>().group = this.group;
 	}
 
 	public InventoryItem GetSelectedItem() {

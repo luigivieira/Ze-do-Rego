@@ -3,21 +3,17 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 	public float playerSpeed;
-	//public Fungus.Flowchart interactablesFlowChart;
 
-	// Use this for initialization
-	void Start () {
-	
+	private Inventory inv;
+	void Awake() {
+		inv = FindObjectOfType<Inventory>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 	public void PickUpCollectable(){
-		GameObject selectedInteractive = LevelManager.Instance().currentInteractable.gameObject;
-		Destroy(selectedInteractive);
+		Interactable selectedInteractive = LevelManager.Instance().currentInteractable;
+		if (selectedInteractive.isPickable){
+			inv.addItem(LevelManager.Instance().selectedItem);
+			Destroy(selectedInteractive.gameObject);
+		}
 		//string toPickName = interactablesFlowChart.GetStringVariable("selectedInteractable");
 		//GameObject toPick = GameObject.Find(toPickName);
 		//TODO: Send to inventory
