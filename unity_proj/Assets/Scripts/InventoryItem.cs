@@ -7,6 +7,6 @@ public abstract class InventoryItem : MonoBehaviour{
 	 * Base class to create items to add to inventory
 	 */
 
-	public abstract void useItem();
+	public abstract bool useItem();
 
 }

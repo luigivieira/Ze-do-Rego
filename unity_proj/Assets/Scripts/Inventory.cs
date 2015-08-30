@@ -39,8 +39,9 @@ public class Inventory : MonoBehaviour {
 	public void useSelectedItem () {
 		InventoryItem selectedItem = GetSelectedItem();
 		if (selectedItem != null) {
-			selectedItem.useItem();
-			removeItem(selectedItem);
+			if(selectedItem.useItem()){
+				removeItem(selectedItem);
+			}
 		}
 	}
 

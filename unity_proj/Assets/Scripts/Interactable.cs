@@ -2,12 +2,21 @@
 using System.Collections;
 using UnityEngine.Assertions;
 
+public enum ItemType{
+	Warning,
+	FireExtinguisher,
+	Tnt,
+	Other
+}
+
 public class Interactable : MonoBehaviour{
 	public bool isPickable = false;
 	public GameObject observeObj, useObj, pickObj, talkObj;
+	public ItemType itemType = ItemType.Other;
 
 	private ContextMenu contextMenu;
 	private SpriteRenderer renderer;
+
 
 	void Awake () {
 		Assert.IsNotNull(observeObj);
@@ -33,15 +42,34 @@ public class Interactable : MonoBehaviour{
 	}
 
 	public void Observe() {
+		//TODO: tirar daqui
+		if(itemType == ItemType.Warning) {
+			LevelManager.Instance().observedAviso = true;
+		}
+		else if(itemType == ItemType.FireExtinguisher) {
+			LevelManager.Instance().observedFireExtinguisher = true;
+		}
+		//
 		observeObj.SetActive(true);
 	}
 	public void Use() {
+		//TODO: tirar daqui
+
+		//
 		useObj.SetActive(true);
 	}
 	public void Pick() {
+		//TODO: tirar daqui
+
+		//
 		pickObj.SetActive(true);
 	}
 	public void TalkTo() {
+		//TODO: tirar daqui
+		if(itemType == ItemType.Warning) {
+			LevelManager.Instance().talkedToAviso = true;
+		}
+		//
 		talkObj.SetActive(true);
 	}
 

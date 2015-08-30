@@ -6,13 +6,13 @@ public class TalkAction : MonoBehaviour {
 	public string dialogName;
 	public int startIndex;
 	public GameObject dialogueBoxPrefab;
-	private DialogueBox dialogueBox;
-	private Dialogue currentDialogue;
-	private Dialogue.Choice currentChoice;
-	private Dialogue.Choice[] nextChoices;
+	protected DialogueBox dialogueBox;
+	protected Dialogue currentDialogue;
+	protected Dialogue.Choice currentChoice;
+	protected Dialogue.Choice[] nextChoices;
 
 	// Use this for initialization
-	void OnEnable () {
+	protected virtual void OnEnable () {
 		DialogueManager manager = DialogueManager.LoadDialogueFile(dialogFile);
 		currentDialogue = manager.GetDialogue(dialogName);
 		Dialogue.Choice[] choices = currentDialogue.GetChoices();
@@ -33,11 +33,11 @@ public class TalkAction : MonoBehaviour {
 		}
 	}
 
-	private Sprite GetImageFromResources(string speaker){
+	protected Sprite GetImageFromResources(string speaker){
 		return Resources.Load<Sprite>("DialogueAvatars/"+speaker);
 	}
 
-	private void SetupDialogueBox() {
+	protected void SetupDialogueBox() {
 		if(dialogueBox == null){
 			GameObject prefabInstance = GameObject.Instantiate(dialogueBoxPrefab);
 			dialogueBox = prefabInstance.transform.GetChild(0).GetComponent<DialogueBox>();
