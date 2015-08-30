@@ -44,9 +44,9 @@ public class FindPath : Singleton<FindPath> {
 
 	public Waypoint DoStep(Waypoint from){
 		if (destination == null){
-			return null;
+			return from;
 		}
-		if (from.GetInstanceID() == destination.GetInstanceID()){
+		if (from == destination){
 			destination = null;
 			return from;
 		}
@@ -55,7 +55,7 @@ public class FindPath : Singleton<FindPath> {
 		}
 		float totalDistance = Vector3.Distance(from.transform.position, destination.transform.position);
 		float minorDistance = totalDistance;
-		Waypoint selectedWaypoint = null;
+		Waypoint selectedWaypoint = from;
 		foreach (var wp in from.nextWaypoints){
 			float curDist = Vector3.Distance(wp.waypoint.transform.position, destination.transform.position);
 			if (curDist < minorDistance){
