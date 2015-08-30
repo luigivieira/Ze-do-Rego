@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 82e44f6924e364d108b3adca9d882d34
-timeCreated: 1440911838
+guid: d7ec7b2500333492c887c52a2ef52cd9
+timeCreated: 1440912128
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: lili_walk_back_ss_0
-    21300002: lili_walk_back_ss_1
-    21300004: lili_walk_back_ss_2
-    21300006: lili_walk_back_ss_3
-    21300008: lili_walk_back_ss_4
-    21300010: lili_walk_back_ss_5
-    21300012: lili_walk_back_ss_6
-    21300014: lili_walk_back_ss_7
-    21300016: lili_walk_back_ss_8
-    21300018: lili_walk_back_ss_9
-    21300020: lili_walk_back_ss_10
+    21300000: lili_walk_front_ss_0
+    21300002: lili_walk_front_ss_1
+    21300004: lili_walk_front_ss_2
+    21300006: lili_walk_front_ss_3
+    21300008: lili_walk_front_ss_4
+    21300010: lili_walk_front_ss_5
+    21300012: lili_walk_front_ss_6
+    21300014: lili_walk_front_ss_7
+    21300016: lili_walk_front_ss_8
+    21300018: lili_walk_front_ss_9
+    21300020: lili_walk_front_ss_10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -37,8 +37,8 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -3
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -60,113 +60,113 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: lili_walk_back_ss_0
+    - name: lili_walk_front_ss_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 604
-        width: 250
-        height: 420
+        x: 8
+        y: 686
+        width: 184
+        height: 322
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_1
+    - name: lili_walk_front_ss_1
       rect:
         serializedVersion: 2
-        x: 298
-        y: 610
-        width: 248
-        height: 414
+        x: 208
+        y: 688
+        width: 184
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_2
+    - name: lili_walk_front_ss_2
       rect:
         serializedVersion: 2
-        x: 572
-        y: 607
-        width: 250
-        height: 417
+        x: 407
+        y: 694
+        width: 184
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_3
+    - name: lili_walk_front_ss_3
       rect:
         serializedVersion: 2
-        x: 846
-        y: 603
-        width: 252
-        height: 417
+        x: 604
+        y: 695
+        width: 188
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_4
+    - name: lili_walk_front_ss_4
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 600
-        width: 255
-        height: 420
+        x: 804
+        y: 692
+        width: 188
+        height: 319
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_5
+    - name: lili_walk_front_ss_5
       rect:
         serializedVersion: 2
-        x: 1392
-        y: 596
-        width: 258
-        height: 420
+        x: 1000
+        y: 688
+        width: 192
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_6
+    - name: lili_walk_front_ss_6
       rect:
         serializedVersion: 2
-        x: 1671
-        y: 600
-        width: 255
-        height: 420
+        x: 1204
+        y: 691
+        width: 188
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_7
+    - name: lili_walk_front_ss_7
       rect:
         serializedVersion: 2
-        x: 18
-        y: 172
-        width: 254
-        height: 417
+        x: 1404
+        y: 692
+        width: 188
+        height: 319
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_8
+    - name: lili_walk_front_ss_8
       rect:
         serializedVersion: 2
-        x: 296
-        y: 176
-        width: 250
-        height: 415
+        x: 1607
+        y: 694
+        width: 184
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_9
+    - name: lili_walk_front_ss_9
       rect:
         serializedVersion: 2
-        x: 572
-        y: 179
-        width: 252
-        height: 414
+        x: 1808
+        y: 688
+        width: 184
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: lili_walk_back_ss_10
+    - name: lili_walk_front_ss_10
       rect:
         serializedVersion: 2
-        x: 848
-        y: 175
-        width: 250
-        height: 418
+        x: 8
+        y: 331
+        width: 184
+        height: 322
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
