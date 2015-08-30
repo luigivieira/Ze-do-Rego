@@ -5,8 +5,29 @@ public class Player : MonoBehaviour {
 	public float playerSpeed;
 
 	private Inventory inv;
+	private Vector3 nextDestination;
 	void Awake() {
+		nextDestination = transform.position;
 		inv = FindObjectOfType<Inventory>();
+	}
+	void Update() {
+		if(Input.GetMouseButtonDown(0) && GameObject.FindObjectOfType<ContextMenu>() == null){
+			FindPath.Instance().SetDestination(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+		}
+		if (FindPath.Instance().HasDestination()) {
+			if (nextDestination == transform.position && FindPath.Instance().HasDestination()){
+				nextDestination = FindPath.Instance().DoStep(FindPath.Instance().GetCurrentWaypoint(transform.position)).transform.position;
+				GoToNextPoint();
+			}
+		}
+	}
+
+	void GoToNextPoint() {
+		iTween.MoveTo(gameObject, iTween.Hash(
+			"position", nextDestination,
+			"speed", playerSpeed,
+			"easetype", "linear"
+		));
 	}
 	public void PickUpCollectable(){
 		Interactable selectedInteractive = LevelManager.Instance().currentInteractable;
