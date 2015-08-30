@@ -26,6 +26,7 @@ public class TalkAction : MonoBehaviour {
 			else {
 				nextChoices = choices;
 			}
+			LevelManager.Instance().clickLocked = true;
 			SetupDialogueBox();
 			
 			this.gameObject.SetActive(false);
@@ -77,6 +78,7 @@ public class TalkAction : MonoBehaviour {
 		}
 		else {
 			dialogueBox.Dismiss();
+			LevelManager.Instance().clickLocked = false;
 		}
 	}
 }

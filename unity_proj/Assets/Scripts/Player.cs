@@ -11,13 +11,15 @@ public class Player : MonoBehaviour {
 		inv = FindObjectOfType<Inventory>();
 	}
 	void Update() {
-		if(Input.GetMouseButtonDown(0) && GameObject.FindObjectOfType<ContextMenu>() == null){
-			FindPath.Instance().SetDestination(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-		}
-		if (FindPath.Instance().HasDestination()) {
-			if (nextDestination == transform.position && FindPath.Instance().HasDestination()){
-				nextDestination = FindPath.Instance().DoStep(FindPath.Instance().GetCurrentWaypoint(transform.position)).transform.position;
-				GoToNextPoint();
+		if (!LevelManager.Instance().clickLocked){
+			if(Input.GetMouseButtonDown(0) && GameObject.FindObjectOfType<ContextMenu>() == null){
+				FindPath.Instance().SetDestination(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+			}
+			if (FindPath.Instance().HasDestination()) {
+				if (nextDestination == transform.position && FindPath.Instance().HasDestination()){
+					nextDestination = FindPath.Instance().DoStep(FindPath.Instance().GetCurrentWaypoint(transform.position)).transform.position;
+					GoToNextPoint();
+				}
 			}
 		}
 	}

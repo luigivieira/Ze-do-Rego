@@ -46,6 +46,7 @@ public class Interactable : MonoBehaviour{
 	}
 
 	void OnMouseDown() {
+		if (LevelManager.Instance().clickLocked) return;
 		LevelManager.Instance().SetSelectedInteractable(this);
 		contextMenu.gameObject.SetActive(true);
 	}
@@ -56,6 +57,7 @@ public class Interactable : MonoBehaviour{
 	}
 
 	void OnMouseEnter(){
+		if (LevelManager.Instance().clickLocked) return;
 		Color c;
 		Color.TryParseHexString("AAAAAAFF", out c);
 		iTween.ValueTo(gameObject, iTween.Hash(
@@ -67,6 +69,7 @@ public class Interactable : MonoBehaviour{
 	}
 
 	void OnMouseExit() {
+		if (LevelManager.Instance().clickLocked) return;
 		iTween.ValueTo(gameObject, iTween.Hash(
 			"from", renderer.color, 
 			"to", Color.white,

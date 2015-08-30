@@ -5,6 +5,7 @@ public class LevelManager : Singleton<LevelManager> {
 
 	public Interactable currentInteractable;
 	public InventoryItem selectedItem;
+	public bool clickLocked = false;
 
 	private ContextMenu ctxMenu;
 	public ContextMenu GetContextMenu(){
