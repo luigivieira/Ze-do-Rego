@@ -7,6 +7,7 @@ public class Interactable : MonoBehaviour{
 	public GameObject observeObj, useObj, pickObj, talkObj;
 
 	private ContextMenu contextMenu;
+	private SpriteRenderer renderer;
 
 	void Awake () {
 		Assert.IsNotNull(observeObj);
@@ -15,6 +16,7 @@ public class Interactable : MonoBehaviour{
 		Assert.IsNotNull(talkObj);
 
 		contextMenu = LevelManager.Instance().GetContextMenu();
+		renderer = GetComponent<SpriteRenderer>();
 		observeObj = Instantiate(observeObj);
 		observeObj.SetActive(false);
 		useObj = Instantiate(useObj);
@@ -47,5 +49,31 @@ public class Interactable : MonoBehaviour{
 		LevelManager.Instance().SetSelectedInteractable(this);
 		contextMenu.gameObject.SetActive(true);
 	}
+
+	#region Selection Highlight
+	void UpdateRendererColor(Color c){
+		renderer.color = c;
+	}
+
+	void OnMouseEnter(){
+		Color c;
+		Color.TryParseHexString("AAAAAAFF", out c);
+		iTween.ValueTo(gameObject, iTween.Hash(
+			"from", renderer.color, 
+			"to", c,
+			"time", 0.1f,
+			"onupdate", "UpdateRendererColor"
+		));
+	}
+
+	void OnMouseExit() {
+		iTween.ValueTo(gameObject, iTween.Hash(
+			"from", renderer.color, 
+			"to", Color.white,
+			"time", 0.1f,
+			"onupdate", "UpdateRendererColor"
+		));
+	}
+	#endregion
 
 }
