@@ -2,15 +2,23 @@
 using System.Collections;
 
 public class Waypoint : MonoBehaviour {
-	public GameObject [] nextWaypoints;
-	public int weight = -1;
+	[System.Serializable]
+	public class WaypointLink {
+		public Waypoint waypoint;
+		public int distance;
+	}
+
+	public WaypointLink [] nextWaypoints;
+
 	void OnDrawGizmosSelected(){
 		foreach( var go in nextWaypoints){
-			Gizmos.DrawLine(transform.position, go.transform.position);
+			if (go != null && go.waypoint != null){
+				Gizmos.DrawLine(transform.position, go.waypoint.transform.position);
+			}
 		}
 	}
 	void OnDrawGizmos() {
-		Gizmos.DrawSphere(transform.position,0.1f);
+		Gizmos.DrawSphere(transform.position,0.5f);
 	}
 
 }
