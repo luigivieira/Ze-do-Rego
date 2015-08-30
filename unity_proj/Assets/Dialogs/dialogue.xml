@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DialogueFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Script</name>
+  <hideFlags>None</hideFlags>
+  <entries>
+    <DialogueEntry>
+      <id>classroom</id>
+      <maxLineId>4</maxLineId>
+      <speakers>
+        <string>Professora</string>
+        <string>Lili</string>
+      </speakers>
+    </DialogueEntry>
+    <DialogueEntry>
+      <id>fireextinguisher</id>
+      <maxLineId>11</maxLineId>
+      <speakers>
+        <string>Lili</string>
+      </speakers>
+    </DialogueEntry>
+  </entries>
+  <lines>
+    <DialogueLine>
+      <id>0</id>
+      <dialogueEntry>classroom</dialogueEntry>
+      <dialogue />
+      <output>
+        <int>1</int>
+      </output>
+      <position>
+        <x>10</x>
+        <y>10</y>
+      </position>
+      <userData>... é assim que fazemos leite pausterizado</userData>
+      <speaker>Professora</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>1</id>
+      <dialogueEntry>classroom</dialogueEntry>
+      <dialogue />
+      <output>
+        <int>2</int>
+        <int>3</int>
+      </output>
+      <position>
+        <x>160</x>
+        <y>10</y>
+      </position>
+      <userData>certo.... não entendi nada</userData>
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>2</id>
+      <dialogueEntry>classroom</dialogueEntry>
+      <dialogue />
+      <output />
+      <position>
+        <x>331</x>
+        <y>12</y>
+      </position>
+      <userData>Qual a desse braço ai?</userData>
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>3</id>
+      <dialogueEntry>classroom</dialogueEntry>
+      <dialogue />
+      <output />
+      <position>
+        <x>332</x>
+        <y>192</y>
+      </position>
+      <userData>Posso sair?</userData>
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>0</id>
+      <dialogueEntry>fireextinguisher</dialogueEntry>
+      <dialogue />
+      <output>
+        <int>10</int>
+        <int>1</int>
+      </output>
+      <position>
+        <x>10</x>
+        <y>10</y>
+      </position>
+      <userData />
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>1</id>
+      <dialogueEntry>fireextinguisher</dialogueEntry>
+      <dialogue>um extintor de incêndio, adoro vermelho!</dialogue>
+      <output>
+        <int>2</int>
+        <int>3</int>
+      </output>
+      <position>
+        <x>183</x>
+        <y>16</y>
+      </position>
+      <userData />
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>2</id>
+      <dialogueEntry>fireextinguisher</dialogueEntry>
+      <dialogue>anana
+</dialogue>
+      <output />
+      <position>
+        <x>528</x>
+        <y>16</y>
+      </position>
+      <userData />
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>3</id>
+      <dialogueEntry>fireextinguisher</dialogueEntry>
+      <dialogue>first!</dialogue>
+      <output>
+        <int>4</int>
+        <int>5</int>
+        <int>8</int>
+      </output>
+      <position>
+        <x>341</x>
+        <y>132</y>
+      </position>
+      <userData />
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>4</id>
+      <dialogueEntry>fireextinguisher</dialogueEntry>
+      <dialogue>banana 2
+</dialogue>
+      <output>
+        <int>2</int>
+      </output>
+      <position>
+        <x>529</x>
+        <y>141</y>
+      </position>
+      <userData />
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>5</id>
+      <dialogueEntry>fireextinguisher</dialogueEntry>
+      <dialogue>Banana 3
+</dialogue>
+      <output>
+        <int>7</int>
+      </output>
+      <position>
+        <x>537</x>
+        <y>271</y>
+      </position>
+      <userData />
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>7</id>
+      <dialogueEntry>fireextinguisher</dialogueEntry>
+      <dialogue>final
+</dialogue>
+      <output />
+      <position>
+        <x>702</x>
+        <y>279</y>
+      </position>
+      <userData />
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>8</id>
+      <dialogueEntry>fireextinguisher</dialogueEntry>
+      <dialogue>banana 4</dialogue>
+      <output />
+      <position>
+        <x>338</x>
+        <y>323</y>
+      </position>
+      <userData />
+      <speaker>Lili</speaker>
+    </DialogueLine>
+    <DialogueLine>
+      <id>10</id>
+      <dialogueEntry>fireextinguisher</dialogueEntry>
+      <dialogue>Outra Escolha</dialogue>
+      <output />
+      <position>
+        <x>164</x>
+        <y>185</y>
+      </position>
+      <userData />
+      <speaker>Lili</speaker>
+    </DialogueLine>
+  </lines>
+</DialogueFile>
