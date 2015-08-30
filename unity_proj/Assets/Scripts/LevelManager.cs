@@ -3,6 +3,12 @@ using System.Collections;
 
 public class LevelManager : Singleton<LevelManager> {
 
+	#region Player Interaction Variables
+	public bool talkedToAviso = false;
+	public bool observedAviso = false;
+	public bool observedFireExtinguisher = false;
+	#endregion
+
 	public Interactable currentInteractable;
 	public InventoryItem selectedItem;
 	public bool clickLocked = false;
