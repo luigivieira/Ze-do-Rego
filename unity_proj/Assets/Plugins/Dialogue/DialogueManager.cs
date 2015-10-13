@@ -130,15 +130,17 @@ public class Dialogue
     {
         List<Choice> choices = new List<Choice>();
 
-        foreach (int id in lines[currentIndex].output)
-        {
-            Choice c = new Choice();
-            c.id = id;
-            c.dialogue = lines[id].dialogue;
-            c.speaker = lines[id].speaker;
-            c.userData = lines[id].userData;
-            choices.Add(c);
-        }
+		if(lines.ContainsKey(currentIndex)){
+	        foreach (int id in lines[currentIndex].output)
+	        {
+	            Choice c = new Choice();
+	            c.id = id;
+	            c.dialogue = lines[id].dialogue;
+	            c.speaker = lines[id].speaker;
+	            c.userData = lines[id].userData;
+	            choices.Add(c);
+	        }
+		}
 
         return choices.ToArray();
     }
@@ -163,6 +165,7 @@ public class Dialogue
 /// </code>
 /// </example>
 /// </summary>
+
 public class DialogueManager
 {
     private static Dictionary<DialogueFile, DialogueManager> managers = new Dictionary<DialogueFile, DialogueManager>();
