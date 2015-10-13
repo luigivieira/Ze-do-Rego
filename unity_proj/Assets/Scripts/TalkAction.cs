@@ -15,6 +15,7 @@ public class TalkAction : MonoBehaviour {
 	protected virtual void OnEnable () {
 		DialogueManager manager = DialogueManager.LoadDialogueFile(dialogFile);
 		currentDialogue = manager.GetDialogue(dialogName);
+		currentDialogue.Start();
 		Dialogue.Choice[] choices = currentDialogue.GetChoices();
 		Debug.Log(choices.Length);
 		if(choices.Length > 0 ){
@@ -24,6 +25,7 @@ public class TalkAction : MonoBehaviour {
 				nextChoices = currentDialogue.GetChoices();
 			}
 			else {
+				currentChoice = null;
 				nextChoices = choices;
 			}
 			LevelManager.Instance().clickLocked = true;
