@@ -65,7 +65,8 @@ public class DialogueEditor : EditorWindow
 		editor.linetexture = AssetDatabase.LoadAssetAtPath("Assets/Dialogue/Editor/Line.png", typeof(Texture2D)) as Texture2D;
 		editor.files.Clear();
 		// get dialogue from scene
-		DialogueFile[] files = FindObjectsOfTypeIncludingAssets(typeof(DialogueFile)) as DialogueFile[];
+		//DialogueFile[] files = FindObjectsOfTypeIncludingAssets(typeof(DialogueFile)) as DialogueFile[];
+		DialogueFile[] files = Resources.FindObjectsOfTypeAll<DialogueFile>();
 		if (files != null)
 		{
 			foreach (DialogueFile f in files)
@@ -191,12 +192,13 @@ public class DialogueEditor : EditorWindow
 			Object[] saveObjects = new Object[2];
 			saveObjects[0] = this;
 			saveObjects[1] = files[filePopupSelectedIndex];
-			Undo.RegisterUndo(saveObjects, name);
+			Undo.RecordObjects(saveObjects, name);
 		}
 	}
 
 	void OnGUI()
 	{
+		Init ();
 		TextAnchor oldAlignment = GUI.skin.window.alignment;
 		GUI.skin.window.alignment = TextAnchor.UpperLeft;
 
@@ -550,11 +552,11 @@ public class DialogueEditor : EditorWindow
 			// find lines that link to this one
 			foreach (DialogueFile.DialogueLine line in files[filePopupSelectedIndex].lines)
 			{
-				if (line.dialogueEntry == windows[lastFocusWindow].line.dialogueEntry)
-				{
+				//if (line.dialogueEntry == windows[lastFocusWindow].line.dialogueEntry)
+				//{
 					if (line.output.Contains(windows[lastFocusWindow].line.id))
 						line.output.Remove(windows[lastFocusWindow].line.id);
-				}
+				//}
 			}
 			// remove currently selected window
 			files[filePopupSelectedIndex].lines.Remove(windows[lastFocusWindow].line);

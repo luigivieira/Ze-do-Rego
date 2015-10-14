@@ -15,7 +15,7 @@ public class Interactable : MonoBehaviour{
 	public ItemType itemType = ItemType.Other;
 
 	private ContextMenu contextMenu;
-	private SpriteRenderer renderer;
+	private SpriteRenderer sprRenderer;
 
 
 	void Awake () {
@@ -25,7 +25,7 @@ public class Interactable : MonoBehaviour{
 		Assert.IsNotNull(talkObj);
 
 		contextMenu = LevelManager.Instance().GetContextMenu();
-		renderer = GetComponent<SpriteRenderer>();
+		sprRenderer = GetComponent<SpriteRenderer>();
 		observeObj = Instantiate(observeObj);
 		observeObj.SetActive(false);
 		useObj = Instantiate(useObj);
@@ -81,15 +81,15 @@ public class Interactable : MonoBehaviour{
 
 	#region Selection Highlight
 	void UpdateRendererColor(Color c){
-		renderer.color = c;
+		sprRenderer.color = c;
 	}
 
 	void OnMouseEnter(){
 		if (LevelManager.Instance().clickLocked) return;
 		Color c;
-		Color.TryParseHexString("AAAAAAFF", out c);
+		ColorUtility.TryParseHtmlString("#AAAAAAFF", out c);
 		iTween.ValueTo(gameObject, iTween.Hash(
-			"from", renderer.color, 
+			"from", sprRenderer.color, 
 			"to", c,
 			"time", 0.1f,
 			"onupdate", "UpdateRendererColor"
@@ -99,7 +99,7 @@ public class Interactable : MonoBehaviour{
 	void OnMouseExit() {
 		if (LevelManager.Instance().clickLocked) return;
 		iTween.ValueTo(gameObject, iTween.Hash(
-			"from", renderer.color, 
+			"from", sprRenderer.color, 
 			"to", Color.white,
 			"time", 0.1f,
 			"onupdate", "UpdateRendererColor"

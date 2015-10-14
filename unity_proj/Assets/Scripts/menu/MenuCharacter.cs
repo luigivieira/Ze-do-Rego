@@ -9,11 +9,11 @@ public enum Character{
 
 public class MenuCharacter : MonoBehaviour {
 	public Character selectedChar;
-	private SpriteRenderer renderer;
+	private SpriteRenderer sprRenderer;
 
 
 	void Awake () {
-		renderer = GetComponent<SpriteRenderer>();
+		sprRenderer = GetComponent<SpriteRenderer>();
 	}
 
 	public void NextAnimation() {
@@ -23,14 +23,14 @@ public class MenuCharacter : MonoBehaviour {
 	
 	#region Selection Highlight
 	void UpdateRendererColor(Color c){
-		renderer.color = c;
+		sprRenderer.color = c;
 	}
 	
 	void OnMouseEnter(){
 		Color c;
-		Color.TryParseHexString("AAAAAAFF", out c);
+		ColorUtility.TryParseHtmlString("#AAAAAAFF", out c);
 		iTween.ValueTo(gameObject, iTween.Hash(
-			"from", renderer.color, 
+			"from", sprRenderer.color, 
 			"to", c,
 			"time", 0.1f,
 			"onupdate", "UpdateRendererColor"
@@ -39,7 +39,7 @@ public class MenuCharacter : MonoBehaviour {
 	
 	void OnMouseExit() {
 		iTween.ValueTo(gameObject, iTween.Hash(
-			"from", renderer.color, 
+			"from", sprRenderer.color, 
 			"to", Color.white,
 			"time", 0.1f,
 			"onupdate", "UpdateRendererColor"
